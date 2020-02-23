@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>코로나 AR</title>
+    <script>
+
+    </script>
+    </head>
+    <link rel="stylesheet" href="/stylesheets/map.css">
+    <link rel="stylesheet" href="/stylesheets/index.css">
+    <body>
+
+        <h1 align="center" >코로나 AR</h1>
+
+        <h2  align="center" > 
+            현재 위치에서 반경 500m 내 코로나 확진자 방문지를 카메라로 확인합니다.</br>
+            카메라 찾기시 위치와 카메라 권한을 요청하게 됩니다.
+        </h2>
+
+        <div class='container'>
+            <div class="map_wrap">
+                <div id="map" style="width:100%;height:600px;position:relative;"></div>
+                <div class="hAddr">
+                    <span id="centerAddr"></span>
+                </div>
+            </div>
+            <form action="/Covid19" onsubmit="return check()" method="get">
+
+                <input class="submit_css" type="submit" value="카메라로 찾기">
+            </form>
+        </div>
+
+        <!-- kakao map API 연동 -->
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=73f2cfbc75f5036d8e88a7d4d6eb0f75&libraries=services"></script>
+        <script>
+            var Lat = 37.566663;
+            var Lng = 126.978407;
+            if(navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    Lat = position.coords.latitude;
+                    Lng = position.coords.longitude;
+
+                    var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+                    mapOption = {
+                        center: new kakao.maps.LatLng(Lat,Lng), // 지도의 중심좌표
+                        level: 3 // 지도의 확대 레벨
+                    };  
+
+                    
+                    // 지도를 생성합니다
+                    var map = new kakao.maps.Map(mapContainer, mapOption); 
+
+                    // 현재 위치 마커에 표시합니다.
+                    var markerPosition  = new kakao.maps.LatLng(Lat, Lng);
+                    // 마커를 생성합니다
+                    var marker = new kakao.maps.Marker({
+                        position: markerPosition
+                    });
+
+                    // 마커가 지도 위에 표시되도록 설정합니다
+                    marker.setMap(map);
+                });    
+            }
+            
+        </script>
+
+    </body>
+</html>
