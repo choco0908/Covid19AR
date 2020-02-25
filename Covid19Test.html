@@ -8,13 +8,21 @@
     <script src='https://raw.githack.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js'></script>
     <script src='https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js'></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-
+    <script>
+        var naver = {};
+        naver.maps = {};
+        naver.maps.LatLng = function(latitude,longitude){
+            this.latitude = latitude;
+            this.longitude = longitude;
+        }
+    </script>
 </head>
 
 <link rel="stylesheet" href="/stylesheets/index.css">
-<link rel="stylesheet" href="/stylesheets/arjs.css">
+
 <!-- Dynamically add places from Javascript -->
 <script src="/js/places.js"></script>
+<script src="/js/metadata"></script>
 
 <script>
     AFRAME.registerComponent('distance-check', {

@@ -3,6 +3,11 @@
 span {
     margin-right: 0.5em;
 }
+.container {width:100%;height:auto;position:relative;}
+.title {font-weight:bold;display:block;}
+.hAddr {position:absolute;left:10px;top:10px;border-radius: 2px;background:#fff;background:rgba(255,255,255,0.8);z-index:1;padding:5px;}
+#centerAddr {display:block;margin-top:2px;font-weight: normal;}
+.bAddr {padding:5px;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
 
 .submit_css { position: relative; top: 30px; left: 45%; border: 1px solid skyblue; background-color: rgba(0,0,0,0); color: skyblue; padding: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-top-left-radius: 5px; border-bottom-left-radius: 5px; font-size: large;}
 .submit_css:hover { color:white; background-color: skyblue; }
@@ -51,4 +56,17 @@ div.debug {
     background-color: white;
     font-size: 1.5em;
     border-radius: 5px;
+}
+
+.camframe{
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 비율인 경우 */
+    /* padding-bottom값은 4:3 비율인 경우 75%로 설정합니다 */
+    padding-top: 25px;
+    height: 0;
+}
+.ariframe{
+    position: absolute;
+    top: 0;
+    left: 0;
 }
