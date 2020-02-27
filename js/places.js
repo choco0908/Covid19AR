@@ -1,5 +1,5 @@
 /*
-[{date: "2/1",address: "테스트 장소",title: "0번재 확진자",latlng: new naver.maps.LatLng(37.499633,127.094559)}],[{date: "2/1",address: "테스트 장소",title: "0번재 확진자",latlng: new naver.maps.LatLng(37.520757, 127.103117)}],
+{date: "2/1",address: "테스트 장소",title: "0번재 확진자",latlng: new naver.maps.LatLng(37.499633,127.094559)},{date: "2/1",address: "테스트 장소",title: "0번재 확진자",latlng: new naver.maps.LatLng(37.510757, 127.102117)},
 */
 
 window.onload = () => {
@@ -9,35 +9,32 @@ window.onload = () => {
     return navigator.geolocation.getCurrentPosition(function (userposition) {
         console.log("사용자 위치는 : "+userposition.coords.latitude+","+userposition.coords.longitude);
         // then use it to load from remote APIs some places nearby
-        var people =[];
-
-        position.forEach(list => {
-            var list = list.map(single => {
-
-                return {
-                    month: single.month,
-                    day: single.day,
-                    date: single.date,
-                    place_name: single.address,
-                    type_name: single.title,
-                    full_name: single.full,
-                    latlng: single.latlng
-                }
-                
-            });
-            people.push(list);
+        
+        var places = position.map(single =>{
+            return {
+                month: single.month,
+                day: single.day,
+                date: single.date,
+                place_name: single.address,
+                type_name: single.title,
+                full_name: single.full,
+                latlng: single.latlng
+            }
         });
-        console.log(people);
-        people.forEach((places) => {
-            places.forEach((place) => {
+        //console.log(places);
+        
+        places.forEach((place) => {
                 var latlng = place.latlng;
 
-                if(!latlng || !latlng.latitude || !latlng.longitude ) return true;
+                if(!latlng) return true;
 
-                const latitude = latlng.latitude;
-                const longitude = latlng.longitude;
+                var replacell = latlng.replace(/(\s*)/g, "");
+                latlng = replacell.split(",");
                 
-                if(computeDistance(userposition.coords,latitude,longitude) > 500) return true;
+                const latitude = latlng[0];
+                const longitude = latlng[1];
+                
+                if(computeDistance(userposition.coords,latitude,longitude) > 1000) return true;
 
                 // add place icon
                 const icon = document.createElement('a-image');
@@ -54,7 +51,7 @@ window.onload = () => {
                 icon.setAttribute('distance-check','');
 
                 // for debug purposes, just show in a bigger scale, otherwise I have to personally go on places...
-                icon.setAttribute('scale', '10 10 10');
+                icon.setAttribute('scale', '30 30 30');
 
                 icon.addEventListener('loaded', () => window.dispatchEvent(new CustomEvent('gps-entity-place-loaded')));
                 
@@ -65,7 +62,7 @@ window.onload = () => {
 
                     const type_name = ev.target.getAttribute('type_name');
                     const place_name = ev.target.getAttribute('place_name');
-                    const dist = ev.target.getAttribute('distance')
+                    const dist = computeDistance(userposition.coords,latitude,longitude);
                     const el = ev.detail.intersection && ev.detail.intersection.object.el;
 
                     if (el && el === ev.target) {
@@ -85,9 +82,9 @@ window.onload = () => {
                 icon.addEventListener('click', clickListener);
                 
                 scene.appendChild(icon);
-            });
         });
-        console.log(people.length+"명 위치 Camera Map 에 표시 완료");
+        
+        console.log(places.length+"개 장소 로딩 완료");
         
     },
         (err) => console.error('Error in retrieving position', err),
