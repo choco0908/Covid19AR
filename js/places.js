@@ -1,5 +1,5 @@
 /*
-{date: "2/1",address: "테스트 장소",title: "0번재 확진자",latlng: new naver.maps.LatLng(37.499633,127.094559)},{date: "2/1",address: "테스트 장소",title: "0번재 확진자",latlng: new naver.maps.LatLng(37.510757, 127.102117)},
+{date: "2/1",address: "테스트 장소",title: "0번재 확진자",latlng: "37.499633,127.094559"},{date: "2/1",address: "테스트 장소",title: "0번재 확진자",latlng: "37.513128, 127.098375"},
 */
 
 window.onload = () => {
@@ -22,6 +22,8 @@ window.onload = () => {
             }
         });
         //console.log(places);
+
+        const dupplace = new Map();
         
         places.forEach((place) => {
                 var latlng = place.latlng;
@@ -35,6 +37,9 @@ window.onload = () => {
                 const longitude = latlng[1];
                 
                 if(computeDistance(userposition.coords,latitude,longitude) > 1000) return true;
+
+                if(dupplace.has(latitude+" "+longitude)) return true;
+                dupplace.set((latitude+" "+longitude),1);
 
                 // add place icon
                 const icon = document.createElement('a-image');
@@ -51,7 +56,7 @@ window.onload = () => {
                 icon.setAttribute('distance-check','');
 
                 // for debug purposes, just show in a bigger scale, otherwise I have to personally go on places...
-                icon.setAttribute('scale', '30 30 30');
+                icon.setAttribute('scale', '20 20 20');
 
                 icon.addEventListener('loaded', () => window.dispatchEvent(new CustomEvent('gps-entity-place-loaded')));
                 
