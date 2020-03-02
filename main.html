@@ -21,6 +21,19 @@
 	</head>
 	<body class="is-preload">
 
+		<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3"></script>
+		<script>
+			window.chartColors = {
+				red: 'rgb(255, 99, 132)',
+				orange: 'rgb(255, 159, 64)',
+				yellow: 'rgb(255, 205, 86)',
+				green: 'rgb(75, 192, 192)',
+				blue: 'rgb(54, 162, 235)',
+				purple: 'rgb(153, 102, 255)',
+				grey: 'rgb(201, 203, 207)'
+    };
+		</script>
+
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -35,6 +48,16 @@
 
 									</ul>
 								</header>
+								
+								<section id="charts">
+									<header class="major">
+										<h5>국내 코로나 현황</h5>
+									</header>
+									<div class="chart-container">
+										<canvas id="myChart" ></canvas>
+									</div>
+									<script src="/js/mychart.js"></script>
+								</section>
 
 							<!-- Banner -->
 								<section id="banner">
@@ -49,11 +72,10 @@
 										</form>
 									<div>
 									<p align="center" > 
-											현 위치에서 반경 500M 내 코로나 확진자 방문지를 </br>카메라로 확인합니다.</br>
+											현 위치에서 반경 1KM 내 코로나 확진자 방문지를 </br>카메라로 확인합니다.</br>
 											카메라 찾기시 위치와 카메라 권한을 요청하게 됩니다.
 									</p>
 								</section>
-
 						</div>
 					</div>
 

@@ -1,0 +1,541 @@
+
+
+
+
+
+
+
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<title>코로나바이러스감염증-19 &gt; 발생동향
+
+
+
+ &gt; 시도별 발생동향
+
+</title>
+
+
+
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+<meta name="author" content="보건복지부, 코로나바이러스감염증-19(COVID-19), 질병관리본부">     
+<meta name="keywords" content="코로나바이러스감염증-19(COVID-19), 코로나바이러스감염증-19, 코로나바이러스, 보건복지부">
+<meta name="description" content="코로나바이러스감염증-19 정식 홈페이지로 발생현황, 확진환자 이동경로, 대상별 유의사항, 홍보자료, FAQ, 관련기관(보건소, 선별진료소 찾기), 정부 브리핑, 대응지침 등 안내">	
+<meta name="copyright" content="보건복지부">
+    
+<link rel="icon" type="image/png" sizes="64x64" href="/static/image/header/ROK.png;jsessionid=1rb8Xf6QV1c0MVszcOIpD9g1EOw2vzGXUfJ1J1egzGM95ZfY4vm5PRtJ4K9kVZxx.mohwwas1_servlet_engine40">
+<link rel="stylesheet" href="/static/css/co_common.css;jsessionid=1rb8Xf6QV1c0MVszcOIpD9g1EOw2vzGXUfJ1J1egzGM95ZfY4vm5PRtJ4K9kVZxx.mohwwas1_servlet_engine40?ver=2020224">
+<link rel="stylesheet" href="/static/css/co_component.css;jsessionid=1rb8Xf6QV1c0MVszcOIpD9g1EOw2vzGXUfJ1J1egzGM95ZfY4vm5PRtJ4K9kVZxx.mohwwas1_servlet_engine40">
+<link rel="stylesheet" href="/static/css/lightslider.min.css;jsessionid=1rb8Xf6QV1c0MVszcOIpD9g1EOw2vzGXUfJ1J1egzGM95ZfY4vm5PRtJ4K9kVZxx.mohwwas1_servlet_engine40">
+<!--[if lt IE 10]>
+<link rel="stylesheet" href="/static/css/nh_common_ie9.css;jsessionid=1rb8Xf6QV1c0MVszcOIpD9g1EOw2vzGXUfJ1J1egzGM95ZfY4vm5PRtJ4K9kVZxx.mohwwas1_servlet_engine40">
+<![endif]-->
+
+<script src="/static/js/jquery-1.11.2.min.js;jsessionid=1rb8Xf6QV1c0MVszcOIpD9g1EOw2vzGXUfJ1J1egzGM95ZfY4vm5PRtJ4K9kVZxx.mohwwas1_servlet_engine40"></script>
+<script src="/static/js/lightslider.min.js;jsessionid=1rb8Xf6QV1c0MVszcOIpD9g1EOw2vzGXUfJ1J1egzGM95ZfY4vm5PRtJ4K9kVZxx.mohwwas1_servlet_engine40"></script>
+<script src="/static/js/co_common.js;jsessionid=1rb8Xf6QV1c0MVszcOIpD9g1EOw2vzGXUfJ1J1egzGM95ZfY4vm5PRtJ4K9kVZxx.mohwwas1_servlet_engine40"></script>
+<script src="/static/js/co_gallery.js;jsessionid=1rb8Xf6QV1c0MVszcOIpD9g1EOw2vzGXUfJ1J1egzGM95ZfY4vm5PRtJ4K9kVZxx.mohwwas1_servlet_engine40"></script>
+
+<script type="text/javaScript" language="javascript">
+
+function fn_goMenu(url, brd_id, brd_gubun, data_Gubun){
+	
+	$("#brdId").val(brd_id);
+	$("#brdGubun").val(brd_gubun);
+	$("#dataGubun").val(data_Gubun);
+
+	var frm = $("#menuFrm");
+	frm.attr("action", url);
+	frm.submit();
+}
+
+function fn_boardView(url, brdId, brdGubun, ncvContSeq, board_id){
+	
+	$("#brdId").val(brdId);
+	$("#brdGubun").val(brdGubun);
+	$("#ncvContSeq").val(ncvContSeq);
+	$("#contSeq").val(ncvContSeq);
+	$("#board_id").val(board_id);
+
+	var frm = $("#menuFrm");
+	frm.attr("action", url);
+	frm.submit();
+	
+}
+
+function fn_tcm_boardView(url, brdId, brdGubun, ncvContSeq, board_id, gubun){
+	
+	$("#brdId").val(brdId);
+	$("#brdGubun").val(brdGubun);
+	$("#ncvContSeq").val(ncvContSeq);
+	$("#contSeq").val(ncvContSeq);
+	$("#board_id").val(board_id);
+	$("#gubun").val(gubun);
+	
+	var frm = $("#menuFrm");
+	frm.attr("action", url);
+	frm.submit();
+	
+}
+
+
+function search( where ){
+	
+	var thisForm = $("#"+ where);
+	var thisSearch = $(thisForm).find("#searchTerm");
+	var cont = $(thisSearch).val();
+	
+	//특수문자 체크
+	if (containsChars(cont,"~!@#$%^&*()+|`=\\[]{};:'\".<>/?")) {
+		alert("특수문자는 제외하고 검색해주시기 바랍니다.");
+		$(thisSearch).val("");
+		event.preventDefault();
+		return false;
+	}else if ( cont == "" || cont == null || cont == undefined){
+		alert("검색어를 입력하세요");
+		$(thisSearch).focus();
+		event.preventDefault();
+		return false;
+	}
+	
+	return true;		
+	
+}
+
+
+
+</script>
+
+<form name="menuFrm" id="menuFrm" method="get">
+	<input name="brdId" id="brdId" type="hidden" />
+	<input name="brdGubun" id="brdGubun" type="hidden" />
+	<input name="dataGubun" id="dataGubun" type="hidden" />
+	<input name="ncvContSeq" id="ncvContSeq" type="hidden" />
+	<input name="contSeq" id="contSeq" type="hidden" />
+	<input name="board_id" id="board_id" type="hidden" />
+	<input name="gubun" id="gubun" type="hidden" />
+</form>
+</head>
+
+<body>
+<div class="wrap nj">
+
+		<div class="w_catch">
+			<div class="wc_p t_dp_n m_dp_n"><span class="hdn">너비 1180px 이상</span></div>
+			<div class="wc_t p_dp_n m_dp_n"><span class="hdn">너비 768px - 1179px</span></div>
+			<div class="wc_m p_dp_n t_dp_n"><span class="hdn">너비 767px 이하</span></div>
+		</div>
+
+		<div class="navigation t_dp_n m_dp_n">
+			<div>
+				<div class="n_left"><h1 class="corona_h1"><a href="/">코로나바이러스감염증-19<span>(COVID-19)</span></a></h1></div>
+                <div class="n_right">
+                	<ul class="shim">
+                    	<li><a href="http://www.mohw.go.kr/" target="_blank" title="새창">중앙사고수습본부</a></li>
+                        <li><a href="http://www.cdc.go.kr/" target="_blank" title="새창">중앙방역대책본부</a></li>
+                    </ul>
+					<ul class="sns">
+						<li class="facebook"><a href="http://www.faceook.com/koreacdcpr" target="_blank" title="질병관리본부 페이스북으로 새창">페이스북</a></li>
+						<li class="youtube"><a href="https://youtube.com/channel/UCa7-3Zvxg-5Rfxgu3RQY_gw" target="_blank" title="질병관리본부 유튜브 새창">유튜브</a></li>
+						<li class="post"><a href="https://post.naver.com/my.nhn?memberNo=20182790" target="_blank" title="질병관리본부 포스트 새창">포스트</a></li>
+						<li class="twitter"><a href="https://twitter.com/KoreaCDC" target="_blank" title="질병관리본부 트위터 새창">트위터</a></li>
+					</ul>					
+					<ul class="country">
+						 <li><a href="/en/" target="_blank" title="새창">English</a></li> 
+						<li><a href="/cn/" target="_blank" title="새창">中文</a></li> 
+					</ul>
+                </div>
+			</div>
+		</div>
+
+		<div id="header" class="header">
+			<div>
+            	<div class="h_left">
+					<h1 class="logo"><a href="/">코로나바이러스감염증-19<span>(COVID-19)</span></a></h1>
+					<div class="t_top_other">
+						<ul class="t_sns">
+							<li class="facebook"><a href="http://www.faceook.com/koreacdcpr" target="_blank" title="질병관리본부 페이스북으로 새창">페이스북</a></li>
+							<li class="youtube"><a href="https://youtube.com/channel/UCa7-3Zvxg-5Rfxgu3RQY_gw" target="_blank" title="질병관리본부 유튜브 새창">유튜브</a></li>
+							<li class="post"><a href="https://post.naver.com/my.nhn?memberNo=20182790" target="_blank" title="질병관리본부 포스트 새창">포스트</a></li>
+							<li class="twitter"><a href="https://twitter.com/KoreaCDC" target="_blank" title="질병관리본부 트위터 새창">트위터</a></li>
+						</ul>
+						<ul class="t_camp">
+							<li><a href="http://www.mohw.go.kr/" target="_blank" title="새창">중앙사고수습본부</a></li>
+							<li><a href="http://www.cdc.go.kr/" target="_blank" title="새창">중앙방역대책본부</a></li>
+						</ul>						
+						<ul class="t_country">
+							<li><a href="/en/" target="_blank" title="새창">English</a></li>
+							<li><a href="/cn/" target="_blank" title="새창">中文</a></li> 
+						</ul>
+					</div>						
+				</div>
+				<div class="h_right">
+					<div id="gnb" class="gnb t_dp_n m_dp_n">
+                        <ul>
+                            <li><a href="javascript:void(0);" onclick="javascript:fn_goMenu('/baroView.do', '', '', '');">바로알기</a></li>
+                            <li><a href="javascript:void(0);" onclick="javascript:fn_goMenu('/bdBoardList.do', '1', '11', '');">발생동향</a></li>
+                            <li><a href="javascript:void(0);" onclick="javascript:fn_goMenu('/tcmBoardList.do', '', '', '');">정보알림</a>
+                                <div class="g_sub"><div>
+                                    <ul>
+                                        <li><a href="javascript:void(0);" onclick="javascript:fn_goMenu('/tcmBoardList.do', '', '', '');">가장 먼저 소식을 알려드립니다</a></li>
+                                        <li><a href="javascript:void(0);" onclick="javascript:fn_goMenu('/infoBoardList.do', '3', '32', '');">널리 알려주세요(홍보물)</a></li>
+                                        <li><a href="javascript:void(0);" onclick="javascript:fn_goMenu('/factBoardList.do', '3', '33', '');">사실은 이렇습니다</a></li>
+                                        <li><a href="javascript:void(0);" onclick="javascript:fn_goMenu('/faqBoardList.do', '3', '34', '');">가장 궁금한 질문들(FAQ)</a></li>
+                                        <li><a href="javascript:void(0);" onclick="javascript:fn_goMenu('/guideBoardList.do', '3', '35', '');">관련기관별 대응지침</a></li>
+                                    </ul>
+                                </div></div>
+                            </li>
+                            <li><a href="javascript:void(0);" onclick="javascript:fn_goMenu('/duBoardList.do', '2', '21', '');">대상별 맞춤정보</a>
+                                <div class="g_sub"><div>
+                                    <ul>
+                                        <li><a href="javascript:void(0);" onclick="javascript:fn_goMenu('/duBoardList.do', '2', '21', '');">일반인</a></li>
+                                        <li><a href="javascript:void(0);" onclick="javascript:fn_goMenu('/duBoardList.do', '2', '23', '');">중국발 입국자 및 해외방문자</a></li>
+                                        <li><a href="javascript:void(0);" onclick="javascript:fn_goMenu('/duBoardList.do', '2', '22', '');">자가격리자</a></li>
+                            			<li><a href="javascript:void(0);" onclick="javascript:fn_goMenu('/duBoardList.do', '2', '24', '');">의료기관</a></li>
+                                        <li><a href="javascript:void(0);" onclick="javascript:fn_goMenu('/duBoardList.do', '2', '25', '');">집단 및 다중이용시설</a></li>
+                                        <li><a href="javascript:void(0);" onclick="javascript:fn_goMenu('/duBoardList.do', '2', '26', '');">기업 및 시장</a></li>
+                                    </ul>
+                                </div></div>
+                            </li>
+                        </ul>
+					</div>
+					
+					<!--20200221 검색추가 시작-->
+					<div class="p_search">
+						<form id="searchForm1" name="searchForm" action="/search/search.jsp" method="post">
+							<input type="hidden" id="pageNum" name="pageNum" value="1" />					<!-- 현재페이지 -->
+							<input type="hidden" id="searchTab" name="searchTab" value="TOTAL" />				<!-- 검색탭 -->
+							<input type="hidden" id="order" name="order" value="weight" />							<!-- 정렬 -->
+							<input type="hidden" id="sDate" name="sDate" value="" />							<!-- 시작일자 -->
+							<input type="hidden" id="eDate" name="eDate" value="" />							<!-- 시작일자 -->
+							<input type="hidden" id="searchRange" name="searchRange" value="total" />		<!-- 검색범위 -->
+							<input type="hidden" id="dateRange" name="dateRange" value="all" />				<!-- 등록범위 -->
+							<div class="n_search">
+								<label for="searchTerm" class="hdn">검색어</label>
+								<input type="text" name="searchTerm" id="searchTerm" value=""  placeholder="검색어를 입력하세요."/>
+								<input type="submit" class="btn_search" onclick="search( 'searchForm1' );"><span class="hdn">검색</span>
+							</div>
+						</form>	
+					</div>
+					<!--20200221 검색추가 끝//-->
+					<!--20200221 검색추가(tablet, mobile) 추가-->
+					<a href="" class="btn_global_search"><span class="hdn">통합검색</span><i></i></a>
+					<div class="global_search">
+						<form id="searchForm2" name="searchForm" action="/search/search.jsp" method="post">
+							<input type="hidden" id="pageNum" name="pageNum" value="1" />					<!-- 현재페이지 -->
+							<input type="hidden" id="searchTab" name="searchTab" value="TOTAL" />				<!-- 검색탭 -->
+							<input type="hidden" id="order" name="order" value="weight" />							<!-- 정렬 -->
+							<input type="hidden" id="sDate" name="sDate" value="" />							<!-- 시작일자 -->
+							<input type="hidden" id="eDate" name="eDate" value="" />							<!-- 시작일자 -->
+							<input type="hidden" id="searchRange" name="searchRange" value="total" />		<!-- 검색범위 -->
+							<input type="hidden" id="dateRange" name="dateRange" value="all" />				<!-- 등록범위 -->
+							<div class="n_search">
+								<label for="searchTerm" class="hdn">검색어</label>
+								<input type="text" name="searchTerm" id="searchTerm" value=""  placeholder="검색어를 입력하세요."/>
+								<input type="submit" class="btn_search" onclick="search( 'searchForm2' );"><span class="hdn">검색</span>
+							</div>
+						</form>	
+						<a href="" class="btn_close"><span class="hdn">통합검색닫기</span></a>
+					</div>
+					<!--20200221 검색추가 추가 끝//-->
+										
+					<a href="" class="btn_global_menu"><span class="hdn">전체메뉴</span><i></i></a>	
+				</div>
+			</div>
+		</div>
+
+		<div class="global_menu">
+			<div>
+				<div class="gm_title">
+					<div class="gmt_p">
+						<span>전체메뉴</span>
+					</div>
+					<div class="gmt_tm">
+						<div class="gmtt_b">
+							<div class="gmt_site">
+								<ul>
+									<li><a href="/">홈</a></li>
+									
+								</ul>
+							</div>
+						</div>
+					</div>				
+				</div>
+				<div class="gm_content">
+					<div>
+                        <ul>
+                            <li  ><a href="javascript:void(0);" onclick="javascript:fn_goMenu('/baroView.do', '4', '', '');" class="gmc_title">바로알기</a> </li>
+                            <li   class="open"><a href="javascript:void(0);" onclick="javascript:fn_goMenu('/bdBoardList.do', '1', '11', '');" class="gmc_title">발생동향</a></li>
+                            <li  ><a class="gmc_title">정보알림</a>
+                                <div class="gmc_list">
+                                    <ul>
+                                        <li  ><a href="javascript:void(0);" onclick="javascript:fn_goMenu('/tcmBoardList.do', '3', '', '');">가장 먼저 소식을 알려드립니다</a></li>
+                                        <li  ><a href="javascript:void(0);" onclick="javascript:fn_goMenu('/infoBoardList.do', '3', '32', '');">널리 알려주세요(홍보물)</a></li>
+                                        <li  ><a href="javascript:void(0);" onclick="javascript:fn_goMenu('/factBoardList.do', '3', '33', '');">사실은 이렇습니다</a></li>
+                                        <li  ><a href="javascript:void(0);" onclick="javascript:fn_goMenu('/faqBoardList.do', '3', '34', '');">가장 궁금한 질문들(FAQ)</a></li>
+                                        <li  ><a href="javascript:void(0);" onclick="javascript:fn_goMenu('/guideBoardList.do', '3', '35', '');">관련기관별 대응지침</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li  ><a href="" class="gmc_title">대상별 맞춤정보</a>
+                                <div class="gmc_list">
+                                    <ul>
+                                        <li  ><a href="javascript:void(0);" onclick="javascript:fn_goMenu('/duBoardList.do', '2', '21', '');">일반인</a> </li>
+                                        <li  ><a href="javascript:void(0);" onclick="javascript:fn_goMenu('/duBoardList.do', '2', '23', '');">중국발 입국자 및 해외방문자</a> </li>
+                                        <li  ><a href="javascript:void(0);" onclick="javascript:fn_goMenu('/duBoardList.do', '2', '22', '');">자가격리자</a> </li>
+                                        <li  ><a href="javascript:void(0);" onclick="javascript:fn_goMenu('/duBoardList.do', '2', '24', '');">의료기관</a> </li>
+                                        <li  ><a href="javascript:void(0);" onclick="javascript:fn_goMenu('/duBoardList.do', '2', '25', '');">집단 및 다중이용시설</a> </li>
+                                        <li  ><a href="javascript:void(0);" onclick="javascript:fn_goMenu('/duBoardList.do', '2', '26', '');">기업 및 시장</a> </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+					</div>
+				</div>
+				<a href="" class="btn_close"><span class="hdn">전체메뉴닫기</span></a>
+			</div>
+		</div>
+
+<script src="/static/js/netfunnel.js"></script>
+<script type="text/javaScript" language="javascript">
+
+function fn_search(pageNo){
+	$("#pageIndex").val(pageNo);
+	fn_submit();
+}
+
+
+// 넷퍼넬  code
+$(document).ready(function() {
+	NetFunnel_Complete();
+});
+</script>
+
+<form name="form1" id="form1" method="post">
+	<input name="pageIndex" id="pageIndex" type="hidden" value="" />
+	<input type="hidden" id="ncv_file_seq" name="ncv_file_seq" value="" />
+	<input type="hidden" id="file_path" name="file_path" value="" />
+	<input type="hidden" id="file_name" name="file_name" value="" />
+	
+	<input type="hidden" id="brdId" name="brdId" value="1" />
+	<input type="hidden" id="brdGubun" name="brdGubun" value="13" />
+
+	<div class="container"><!-- main_container -->
+		<div>
+			<div id="content" class="content">
+				<div>
+
+					<div class="sub_top">
+                          <div class="st_navigation">
+                              <ul>
+                                  <li><a href="/"><span class="hdn">홈</span></a></li>
+                                  <li><a href="javascript:void(0);" onclick="javascript:fn_goMenu('/bdBoardList.do', '1', '11', '');">발생동향</a></li>
+                              </ul>
+                          </div>
+                          <div class="st_title">
+                              <div class="fl_l">
+                                  <h3>발생동향</h3>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- s: content -->
+                      
+						<!--텝메뉴-->
+						<div class="tab_flt cnt3-3-1">
+							<ul>
+								<li ><a href="javascript:void(0);" onclick="javascript:fn_goMenu('/bdBoardList.do', '1', '11', '');"><span>발생동향</span></a></li>
+								<li class="on"><a href="javascript:void(0);" onclick="javascript:fn_goMenu('/bdBoardList.do', '1', '13', '');"><span>시도별 발생동향</span></a></li>
+								<li ><a href="javascript:void(0);" onclick="javascript:fn_goMenu('/bdBoardList.do', '1', '12', '');"><span>확진환자 이동경로</span></a></li>                              
+							</ul>
+						</div>                   
+						<!--텝메뉴-->
+						
+							<script>
+								$(function () {
+									num_comma( $(".number") ); // 숫자 3자리 콤마
+								});
+							</script>
+
+							<div class="timetable">
+								<p class="info"><span>2020년 3월 1일(일) 16시</span>기준</p>
+							</div>
+
+							<div class="data_table tbl_scrl_mini2 mgt24">
+								<table class="num">
+									<caption><span class="hdn">코로나-19 시도별 발생 현황표 - 구분, 증감, 확진환자 계, 확진환자 중 격리 중, 격리해제, 사망 환자정보, 의사환자 계, 의사환자 검사현황 중 검사중, 결과음성 정보, 합계로 구성</span></caption>
+									<colgroup>
+										<col style="width:8%;">
+										<col style="width:8%;">
+										<col style="width:11%;">
+										<col style="width:10%;">
+										<col style="width:10%;">
+										<col style="width:8%;">
+										<col style="width:11%;">
+										<col style="width:10%;">
+										<col style="width:10%;">
+										<col style="width:14%;">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col" rowspan="2">구분</th>
+											<th scope="col" rowspan="2">확진환자 증감 <!--<p class="txt_clr_red">* 새롭게 확진된 환자</p>//--></th>
+											<th id="status_con" colspan="4">확진환자 <span class="numtype">(명)</span></th>
+											<th id="status_test" colspan="3">검사현황 <span class="numtype">(명)</span></th>
+											<th scope="col" rowspan="2">총계</th>
+										</tr>
+										<tr>
+											<th scope="col" id="s_type1">계</th>
+											<th scope="col" id="s_type2">격리<br /> 중</th>
+											<th scope="col" id="s_type3">격리<br />해제</th>
+											<th scope="col" id="s_type4">사망</th>
+											<th scope="col" id="s_type5">계</th>
+											<th scope="col" id="s_type6">검사<br /> 중</th>
+											<th scope="col" id="s_type7">결과<br />음성</th>
+										</tr>
+									</thead>
+									<tbody>
+
+<tr class="sumline"><th scope="row">합계</th><td class="number">586</td><td headers="status_con s_type1" class="number">3,736</td><td headers="status_con s_type2" class="number">3688</td><td headers="status_con s_type3" class="number">30</td><td headers="status_con s_type4" class="number">18</td><td headers="status_test s_type5" class="number">95,185</td><td headers="status_test s_type6" class="number">33,360</td><td headers="status_test s_type7" class="number">61,825</td><td class="number">98,921</td></tr>
+<tr><th scope="row">서울</th><td class="number">10</td><td headers="status_con s_type1" class="number">87</td><td headers="status_con s_type2" class="number">74</td><td headers="status_con s_type3" class="number">13</td><td headers="status_con s_type4" class="number">0</td><td headers="status_test s_type5" class="number">16,382</td><td headers="status_test s_type6" class="number">4,739</td><td headers="status_test s_type7" class="number">11,643</td><td class="number">16,469</td></tr>
+<tr><th scope="row">부산</th><td class="number">3</td><td headers="status_con s_type1" class="number">83</td><td headers="status_con s_type2" class="number">83</td><td headers="status_con s_type3" class="number">0</td><td headers="status_con s_type4" class="number">0</td><td headers="status_test s_type5" class="number">7,049</td><td headers="status_test s_type6" class="number">2,587</td><td headers="status_test s_type7" class="number">4,462</td><td class="number">7,132</td></tr>
+<tr><th scope="row">대구</th><td class="number">469</td><td headers="status_con s_type1" class="number">2,705</td><td headers="status_con s_type2" class="number">2,692</td><td headers="status_con s_type3" class="number">4</td><td headers="status_con s_type4" class="number">9</td><td headers="status_test s_type5" class="number">10,958</td><td headers="status_test s_type6" class="number">5,486</td><td headers="status_test s_type7" class="number">5,472</td><td class="number">13,663</td></tr>
+<tr><th scope="row">인천</th><td class="number">0</td><td headers="status_con s_type1" class="number">6</td><td headers="status_con s_type2" class="number">5</td><td headers="status_con s_type3" class="number">1</td><td headers="status_con s_type4" class="number">0</td><td headers="status_test s_type5" class="number">5,346</td><td headers="status_test s_type6" class="number">1,323</td><td headers="status_test s_type7" class="number">4,023</td><td class="number">5,352</td></tr>
+<tr><th scope="row">광주</th><td class="number">0</td><td headers="status_con s_type1" class="number">9</td><td headers="status_con s_type2" class="number">7</td><td headers="status_con s_type3" class="number">2</td><td headers="status_con s_type4" class="number">0</td><td headers="status_test s_type5" class="number">1,429</td><td headers="status_test s_type6" class="number">718</td><td headers="status_test s_type7" class="number">711</td><td class="number">1,438</td></tr>
+<tr><th scope="row">대전</th><td class="number">0</td><td headers="status_con s_type1" class="number">13</td><td headers="status_con s_type2" class="number">13</td><td headers="status_con s_type3" class="number">0</td><td headers="status_con s_type4" class="number">0</td><td headers="status_test s_type5" class="number">2,685</td><td headers="status_test s_type6" class="number">1,161</td><td headers="status_test s_type7" class="number">1,524</td><td class="number">2,698</td></tr>
+<tr><th scope="row">울산</th><td class="number">3</td><td headers="status_con s_type1" class="number">20</td><td headers="status_con s_type2" class="number">20</td><td headers="status_con s_type3" class="number">0</td><td headers="status_con s_type4" class="number">0</td><td headers="status_test s_type5" class="number">2,227</td><td headers="status_test s_type6" class="number">505</td><td headers="status_test s_type7" class="number">1,722</td><td class="number">2,247</td></tr>
+<tr><th scope="row">세종</th><td class="number">0	</td><td headers="status_con s_type1" class="number">	1	</td><td headers="status_con s_type2" class="number">	1</td><td headers="status_con s_type3" class="number">0</td><td headers="status_con s_type4" class="number">0</td><td headers="status_test s_type5" class="number">328</td><td headers="status_test s_type6" class="number">267</td><td headers="status_test s_type7" class="number">61</td><td class="number">329</td></tr>
+<tr><th scope="row">경기</th><td class="number">7</td><td headers="status_con s_type1" class="number">89</td><td headers="status_con s_type2" class="number">80</td><td headers="status_con s_type3" class="number">8</td><td headers="status_con s_type4" class="number">1</td><td headers="status_test s_type5" class="number">18,614</td><td headers="status_test s_type6" class="number">5392</td><td headers="status_test s_type7" class="number">13,222</td><td class="number">18,703</td></tr>
+<tr><th scope="row">강원</th><td class="number">8</td><td headers="status_con s_type1" class="number">15</td><td headers="status_con s_type2" class="number">15</td><td headers="status_con s_type3" class="number">0</td><td headers="status_con s_type4" class="number">0</td><td headers="status_test s_type5" class="number">3,252</td><td headers="status_test s_type6" class="number">836</td><td headers="status_test s_type7" class="number">2,416</td><td class="number">3,267</td></tr>
+<tr><th scope="row">충북</th><td class="number">1</td><td headers="status_con s_type1" class="number">11</td><td headers="status_con s_type2" class="number">11</td><td headers="status_con s_type3" class="number">0</td><td headers="status_con s_type4" class="number">0</td><td headers="status_test s_type5" class="number">3,117</td><td headers="status_test s_type6" class="number">644</td><td headers="status_test s_type7" class="number">2,473</td><td class="number">3,128</td></tr>
+<tr><th scope="row">충남</th><td class="number">13</td><td headers="status_con s_type1" class="number">68</td><td headers="status_con s_type2" class="number">68</td><td headers="status_con s_type3" class="number">0</td><td headers="status_con s_type4" class="number">0</td><td headers="status_test s_type5" class="number">4,201</td><td headers="status_test s_type6" class="number">2,154</td><td headers="status_test s_type7" class="number">2,047</td><td class="number">4,269</td></tr>
+<tr><th scope="row">전북</th><td class="number">1</td><td headers="status_con s_type1" class="number">6</td><td headers="status_con s_type2" class="number">5</td><td headers="status_con s_type3" class="number">1</td><td headers="status_con s_type4" class="number">0</td><td headers="status_test s_type5" class="number">1,546</td><td headers="status_test s_type6" class="number">356</td><td headers="status_test s_type7" class="number">1,190</td><td class="number">1,552</td></tr>
+<tr><th scope="row">전남</th><td class="number">0</td><td headers="status_con s_type1" class="number">3</td><td headers="status_con s_type2" class="number">2</td><td headers="status_con s_type3" class="number">1</td><td headers="status_con s_type4" class="number">0</td><td headers="status_test s_type5" class="number">2,679</td><td headers="status_test s_type6" class="number">984</td><td headers="status_test s_type7" class="number">1,695</td><td class="number">2,682</td></tr>
+<tr><th scope="row">경북</th><td class="number">67</td><td headers="status_con s_type1" class="number">555</td><td headers="status_con s_type2" class="number">547</td><td headers="status_con s_type3" class="number">0</td><td headers="status_con s_type4" class="number">8</td><td headers="status_test s_type5" class="number">10,062</td><td headers="status_test s_type6" class="number">5,087</td><td headers="status_test s_type7" class="number">4,975</td><td class="number">10,617</td></tr>
+<tr><th scope="row">경남</th><td class="number">4</td><td headers="status_con s_type1" class="number">63</td><td headers="status_con s_type2" class="number">63</td><td headers="status_con s_type3" class="number">0</td><td headers="status_con s_type4" class="number">0</td><td headers="status_test s_type5" class="number">3,973</td><td headers="status_test s_type6" class="number">1,074</td><td headers="status_test s_type7" class="number">2,899</td><td class="number">4,036</td></tr>
+<tr><th scope="row">제주</th><td class="number">0</td><td headers="status_con s_type1" class="number">2</td><td headers="status_con s_type2" class="number">2</td><td headers="status_con s_type3" class="number">0</td><td headers="status_con s_type4" class="number">0</td><td headers="status_test s_type5" class="number">787</td><td headers="status_test s_type6" class="number">47</td><td headers="status_test s_type7" class="number">740</td><td class="number">789</td></tr>
+<tr><th scope="row">검역</th><td class="number">0	</td><td headers="status_con s_type1" class="number">	0	</td><td headers="status_con s_type2" class="number">	0</td><td headers="status_con s_type3" class="number">0</td><td headers="status_con s_type4" class="number">0</td><td headers="status_test s_type5" class="number">550</td><td headers="status_test s_type6" class="number">0</td><td headers="status_test s_type7" class="number">550</td><td class="number">550</td></tr>
+
+									</tbody>
+								</table>
+							</div>
+							
+							<div class="citylist">
+								<p class="ta_c mgt16"><strong class="w_bold">시도별 코로나19 관련 정보</strong></p>
+								<ul class="mgt16 cnt4">
+									<li><a href="http://www.seoul.go.kr/coronaV/coronaStatus.do" target="_blank" title="새창" class="s_link_text"><span class="tit">서울특별시</span></a></li>
+									<li><a href="http://www.busan.go.kr/corona/index.jsp" target="_blank" title="새창" class="s_link_text"><span class="tit">부산광역시</span></a></li>
+									<li><a href="http://www.daegu.go.kr/" target="_blank" title="새창" class="s_link_text"><span class="tit">대구광역시</span></a></li>
+									<li><a href="https://www.incheon.go.kr/health/HE020409" target="_blank" title="새창" class="s_link_text"><span class="tit">인천광역시</span></a></li>
+									<li><a href="https://www.gwangju.go.kr/" target="_blank" title="새창" class="s_link_text"><span class="tit">광주광역시</span></a></li>
+									<li><a href="https://www.daejeon.go.kr/corona19/index.do" target="_blank" title="새창" class="s_link_text"><span class="tit">대전광역시</span></a></li>
+									<li><a href="http://www.ulsan.go.kr/corona.jsp" target="_blank" title="새창" class="s_link_text"><span class="tit">울산광역시</span></a></li>
+									<li><a href="https://www.sejong.go.kr/life/sub05_0704.do" target="_blank" title="새창" class="s_link_text"><span class="tit">세종특별자치시</span></a></li>
+									<li><a href="https://www.gg.go.kr/bbs/boardView.do?bsIdx=464&bIdx=2296956&menuId=1535" target="_blank" title="새창" class="s_link_text"><span class="tit">경기도</span></a></li>
+									<li><a href="http://www.provin.gangwon.kr/" target="_blank" title="새창" class="s_link_text"><span class="tit">강원도</span></a></li>
+									<li><a href="http://www.chungbuk.go.kr/" target="_blank" title="새창" class="s_link_text"><span class="tit">충청북도</span></a></li>
+									<li><a href="http://www.chungnam.go.kr" target="_blank" title="새창" class="s_link_text"><span class="tit">충청남도</span></a></li>
+									<li><a href="http://www.jeonbuk.go.kr/" target="_blank" title="새창" class="s_link_text"><span class="tit">전라북도</span></a></li>
+									<li><a href="https://www.jeonnam.go.kr/" target="_blank" title="새창" class="s_link_text"><span class="tit">전라남도</span></a></li>
+									<li><a href="http://www.gb.go.kr/Main/index.html" target="_blank" title="새창" class="s_link_text"><span class="tit">경상북도</span></a></li>
+									<li><a href="http://www.gyeongnam.go.kr/corona.html" target="_blank" title="새창" class="s_link_text"><span class="tit">경상남도</span></a></li>
+									<li><a href="https://jeju.go.kr/covid19.jsp" target="_blank" title="새창" class="s_link_text"><span class="tit">제주특별자치도</span></a></li>
+								</ul>
+							</div>
+                      
+                      <!-- e: content -->	                		
+				</div>
+			</div>
+		</div>						
+	</div>
+</form>
+
+
+		<div class="footer">
+            <div class="f_top">
+                <div>
+                    <div class="ft_left">
+                        <div class="f_relate">
+                             <ul>
+                                <li>
+                                    <a href="#none"><span>질병관리본부 관련기관 </span><em>바로가기</em></a>
+                                    <div>
+                                        <ul>
+                                            <li><a href="http://www.cdc.go.kr" target="_blank" rel="noopener noreferrer" title="질병관리본부  [새창]">질병관리본부</a></li>
+                                            <li><a href="http://www.cdc.gov/" target="_blank" rel="noopener noreferrer" title="미국질병통제예방센터[CDC]  [새창]">미국질병통제예방센터[CDC]</a></li>
+                                            <li><a href="http://www.ecdc.europa.eu/" target="_blank" rel="noopener noreferrer" title="유럽질병통제예방센터[ECDC] [새창]">유럽질병통제예방센터[ECDC]</a></li>
+                                            <li><a href="http://www.who.int/" target="_blank" rel="noopener noreferrer" title="세계보건기구[WHO] [새창]">세계보건기구[WHO]</a></li>
+                                            <li><a href="http://www.nih.go.jp/" target="_blank" rel="noopener noreferrer" title="일본감염병연구소[NIID] [새창]">일본감염병연구소[NIID]</a></li>
+                                            <li><a href="http://www.hpa.org.uk/" target="_blank" rel="noopener noreferrer" title="영국공공보건국[PHE] [새창]">영국공공보건국[PHE]</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#none"><span>보건환경연구원 </span><em>바로가기</em></a>
+                                    <div>
+                                        <ul>
+                                            <li><a href="http://news.seoul.go.kr/welfare/life_health" target="_blank" rel="noopener noreferrer" title="서울특별시 보건환경연구원 [새창]">서울특별시 보건환경연구원</a></li>
+                                            <li><a href="http://www.busan.go.kr/ihe/index" target="_blank" rel="noopener noreferrer" title="부산광역시 보건환경연구원 [새창]">부산광역시 보건환경연구원</a></li>
+                                            <li><a href="http://www.daegu.go.kr/Health/" target="_blank" rel="noopener noreferrer" title="대구광역시 보건환경연구원 [새창]">대구광역시 보건환경연구원</a></li>
+                                            <li><a href="http://ecopia.incheon.go.kr" target="_blank" rel="noopener noreferrer" title="인천광역시 보건환경연구원 [새창]">인천광역시 보건환경연구원</a></li>
+                                            <li><a href="http://hevi.gwangju.go.kr/" target="_blank" rel="noopener noreferrer" title="광주광역시 보건환경연구원 [새창]">광주광역시 보건환경연구원</a></li>
+                                            <li><a href="http://www.daejeon.go.kr/hea/index.do" target="_blank" rel="noopener noreferrer" title="대전광역시 보건환경연구원 [새창]">대전광역시 보건환경연구원</a></li>
+                                            <li><a href="http://www.ulsan.go.kr/uihe/index" target="_blank" rel="noopener noreferrer" title="울산광역시 보건환경연구원 [새창]">울산광역시 보건환경연구원</a></li>
+                                            <li><a href="http://gg.go.kr/gg_health" target="_blank" rel="noopener noreferrer" title="경기도 보건환경연구원 [새창]">경기도 보건환경연구원</a></li>
+                                            <li><a href="http://www.gihe.re.kr/" target="_blank" rel="noopener noreferrer" title="강원도 보건환경연구원 [새창]">강원도 보건환경연구원</a></li>
+                                            <li><a href="http://here.cb21.net/" target="_blank" rel="noopener noreferrer" title="충청북도 보건환경연구원 [새창]">충청북도 보건환경연구원</a></li>
+                                            <li><a href="http://www.chungnam.go.kr/healthenvMain.do" target="_blank" rel="noopener noreferrer" title="충청남도 보건환경연구원 [새창]">충청남도 보건환경연구원</a></li>
+                                            <li><a href="http://jihe.jeonbuk.go.kr/" target="_blank" rel="noopener noreferrer" title="전라북도 보건환경연구원 [새창]">전라북도 보건환경연구원</a></li>
+                                            <li><a href="http://www.jihe.go.kr/" target="_blank" rel="noopener noreferrer" title="전라남도 보건환경연구원 [새창]">전라남도 보건환경연구원</a></li>
+                                            <li><a href="http://www.gb.go.kr/Main/open_contents/section/inhen/index.html" target="_blank" rel="noopener noreferrer" title="경상북도 보건환경연구원 [새창]">경상북도 보건환경연구원</a></li>
+                                            <li><a href="http://www.gyeongnam.go.kr/knhe/index.gyeong" target="_blank" rel="noopener noreferrer" title="경상남도 보건환경연구원 [새창]">경상남도 보건환경연구원</a></li>
+                                            <li><a href="http://hei.jeju.go.kr/" target="_blank" rel="noopener noreferrer" title="제주특별자치도 보건환경연구원 [새창]">제주특별자치도 보건환경연구원</a></li>
+                                            <li><a href="https://www.sejong.go.kr/vri.do" target="_blank" rel="noopener noreferrer" title="세종시 보건환경 연구원 [새창]">세종시 보건환경 연구원</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+            	</div>
+            </div>
+            <div class="f_bottom">
+                <div>
+                    <div class="fb_left">
+                        <div class="f_navigation">
+                            <ul>
+                                <li class="txt_private"><strong>신고상담</strong></li>
+                                <li>보건소</li>
+                                <li class="cdcinfo">질병관리본부 콜센터 1339</li>
+                                <li>지역번호 + 다산콜센터 120</li>
+                                <li>지역번호 + 114</li>
+                            </ul>
+                        </div>
+                        <div class="f_copyright">
+                            <p>Copyright ⓒ By MOHW. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+		<a href="#header" class="btn_top" style="display: none;"><span class="hdn">상단으로 이동</span></a>
+
+		<div class="body_bg"></div>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-26269343-2"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		
+		  gtag('config', 'UA-26269343-2');
+		</script>
+	</div>
+</body>
+</html>
