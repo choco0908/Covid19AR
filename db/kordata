@@ -4,7 +4,7 @@
       {"city":"서울",   "confirm":"174",    "cured":"38",   "death":"0",    "total":"212",  "differ":"19"},
       {"city":"부산",   "confirm":"70",     "cured":"29",   "death":"0",    "total":"99",   "differ":"1"},
       {"city":"대구",   "confirm":"5705",   "cured":"114",  "death":"48",   "total":"5867", "differ":"73"},
-      {"city":"인천",   "confirm":"21",     "cured":"4",    "death":"0",    "total":"25",   "differ":"12"},
+      {"city":"인천",   "confirm":"21",     "cured":"4",    "death":"0",    "total":"25",   "differ":"0"},
       {"city":"광주",   "confirm":"11",     "cured":"4",    "death":"0",    "total":"15",   "differ":"0"},
       {"city":"대전",   "confirm":"18",     "cured":"2",    "death":"0",    "total":"20",   "differ":"2"},
       {"city":"울산",   "confirm":"22",     "cured":"3",    "death":"0",    "total":"25",   "differ":"0"},
