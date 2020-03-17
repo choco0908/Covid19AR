@@ -1,22 +1,22 @@
 [
-  {"total":"8236 명",   "cured":"1137 명",   "death":"75 명",    "checked":"251297 명"},
+  {"total":"8320 명",   "cured":"1401 명",   "death":"81 명",    "checked":"261105 명"},
   [
-      {"city":"서울",   "confirm":"201",    "cured":"52",   "death":"0",    "total":"253",  "differ":"6"},
-      {"city":"부산",   "confirm":"53",     "cured":"53",   "death":"1",    "total":"107",  "differ":"1"},
-      {"city":"대구",   "confirm":"5279",   "cured":"734",  "death":"53",   "total":"6066", "differ":"35"},
-      {"city":"인천",   "confirm":"26",     "cured":"4",    "death":"0",    "total":"30",   "differ":"0"},
-      {"city":"광주",   "confirm":"12",     "cured":"4",    "death":"0",    "total":"16",   "differ":"0"},
+      {"city":"서울",   "confirm":"210",    "cured":"55",   "death":"0",    "total":"265",  "differ":"12"},
+      {"city":"부산",   "confirm":"52",     "cured":"54",   "death":"1",    "total":"107",  "differ":"0"},
+      {"city":"대구",   "confirm":"5094",   "cured":"947",  "death":"57",   "total":"6098", "differ":"32"},
+      {"city":"인천",   "confirm":"26",     "cured":"5",    "death":"0",    "total":"31",   "differ":"1"},
+      {"city":"광주",   "confirm":"10",     "cured":"6",    "death":"0",    "total":"16",   "differ":"0"},
       {"city":"대전",   "confirm":"18",     "cured":"4",    "death":"0",    "total":"22",   "differ":"0"},
-      {"city":"울산",   "confirm":"21",     "cured":"7",    "death":"0",    "total":"28",   "differ":"0"},
-      {"city":"세종",   "confirm":"40",     "cured":"0",    "death":"0",    "total":"40",   "differ":"1"},
-      {"city":"경기",   "confirm":"180",    "cured":"48",   "death":"3",    "total":"231",  "differ":"20"},
-      {"city":"강원",   "confirm":"21",     "cured":"7",    "death":"1",    "total":"29",   "differ":"0"},
-      {"city":"충북",   "confirm":"25",     "cured":"6",    "death":"0",    "total":"31",   "differ":"0"},
-      {"city":"충남",   "confirm":"103",    "cured":"12",   "death":"0",    "total":"115",  "differ":"0"},
+      {"city":"울산",   "confirm":"20",     "cured":"8",    "death":"0",    "total":"28",   "differ":"0"},
+      {"city":"세종",   "confirm":"40",     "cured":"0",    "death":"0",    "total":"40",   "differ":"0"},
+      {"city":"경기",   "confirm":"204",    "cured":"55",   "death":"3",    "total":"262",  "differ":"31"},
+      {"city":"강원",   "confirm":"20",     "cured":"8",    "death":"1",    "total":"29",   "differ":"0"},
+      {"city":"충북",   "confirm":"26",     "cured":"5",    "death":"0",    "total":"31",   "differ":"0"},
+      {"city":"충남",   "confirm":"100",    "cured":"15",   "death":"0",    "total":"115",  "differ":"0"},
       {"city":"전북",   "confirm":"3",      "cured":"4",    "death":"0",    "total":"7",    "differ":"0"},
       {"city":"전남",   "confirm":"2",      "cured":"2",    "death":"0",    "total":"4",    "differ":"0"},
-      {"city":"경북",   "confirm":"969",    "cured":"178",  "death":"17",   "total":"1164", "differ":"7"},
-      {"city":"경남",   "confirm":"65",     "cured":"20",   "death":"0",    "total":"85",   "differ":"0"},
-      {"city":"제주",   "confirm":"4",      "cured":"0",    "death":"0",    "total":"4",    "differ":"4"}
+      {"city":"경북",   "confirm":"941",    "cured":"209",  "death":"19",   "total":"1169", "differ":"5"},
+      {"city":"경남",   "confirm":"64",     "cured":"22",   "death":"0",    "total":"86",   "differ":"1"},
+      {"city":"제주",   "confirm":"6",      "cured":"0",    "death":"0",    "total":"6",    "differ":"2"}
   ]
 ]
