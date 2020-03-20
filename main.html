@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script language="javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 		<script>
 			function openiframe(){
 				document.getlatlng.action = "/Covid19";
@@ -17,6 +18,29 @@
 				document.getlatlng.submit();
 				return true;
 			}
+		</script>
+		<!-- Notice popup-->
+		
+		<div id="notice_layer">
+			<a href="#" class="close">Close</a>
+			<img src="images/200225_국민예방행동수칙(카드뉴스)_1.png" alt="카드뉴스1">
+			<img src="images/200225_국민예방행동수칙(카드뉴스)_2.png" alt="카드뉴스2">
+			<img src="images/200225_국민예방행동수칙(카드뉴스)_3.png" alt="카드뉴스3">
+			<img src="images/200225_국민예방행동수칙(카드뉴스)_4.png" alt="카드뉴스4">
+			<img src="images/200225_국민예방행동수칙(카드뉴스)_5.png" alt="카드뉴스5">
+			<img src="images/200225_국민예방행동수칙(카드뉴스)_6.png" alt="카드뉴스6">
+			
+		</div>
+
+		<script type="text/javascript">
+			$("#notice_layer").ready(function(e){
+				e.preventDefault();
+				$("#notice_layer").fadeIn();
+			});
+			$("#notice_layer .close").click(function(e){
+				e.preventDefault();
+				$("#notice_layer").fadeOut();
+			});
 		</script>
 	</head>
 	<body class="is-preload">
@@ -33,6 +57,8 @@
 				grey: 'rgb(201, 203, 207)'
     };
 		</script>
+
+		
 
 		<!-- Wrapper -->
 			<div id="wrapper">

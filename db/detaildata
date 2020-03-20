@@ -27,18 +27,18 @@
 <meta name="description" content="코로나바이러스감염증-19 정식 홈페이지로 발생현황, 확진환자 이동경로, 대상별 유의사항, 홍보자료, FAQ, 관련기관(보건소, 선별진료소 찾기), 정부 브리핑, 대응지침 등 안내">	
 <meta name="copyright" content="보건복지부">
     
-<link rel="icon" type="image/png" sizes="64x64" href="/static/image/header/ROK.png;jsessionid=1rb8Xf6QV1c0MVszcOIpD9g1EOw2vzGXUfJ1J1egzGM95ZfY4vm5PRtJ4K9kVZxx.mohwwas1_servlet_engine40">
-<link rel="stylesheet" href="/static/css/co_common.css;jsessionid=1rb8Xf6QV1c0MVszcOIpD9g1EOw2vzGXUfJ1J1egzGM95ZfY4vm5PRtJ4K9kVZxx.mohwwas1_servlet_engine40?ver=2020224">
-<link rel="stylesheet" href="/static/css/co_component.css;jsessionid=1rb8Xf6QV1c0MVszcOIpD9g1EOw2vzGXUfJ1J1egzGM95ZfY4vm5PRtJ4K9kVZxx.mohwwas1_servlet_engine40">
-<link rel="stylesheet" href="/static/css/lightslider.min.css;jsessionid=1rb8Xf6QV1c0MVszcOIpD9g1EOw2vzGXUfJ1J1egzGM95ZfY4vm5PRtJ4K9kVZxx.mohwwas1_servlet_engine40">
+<link rel="icon" type="image/png" sizes="64x64" href="/static/image/header/ROK.png;jsessionid=3oYa9RojaRdqJebgu1EtQkIafR7jOubsJekxcBOISdaQUNnY4bbzkTB1v6xYyatW.mohwwas2_servlet_engine40">
+<link rel="stylesheet" href="/static/css/co_common.css;jsessionid=3oYa9RojaRdqJebgu1EtQkIafR7jOubsJekxcBOISdaQUNnY4bbzkTB1v6xYyatW.mohwwas2_servlet_engine40?ver=2020224">
+<link rel="stylesheet" href="/static/css/co_component.css;jsessionid=3oYa9RojaRdqJebgu1EtQkIafR7jOubsJekxcBOISdaQUNnY4bbzkTB1v6xYyatW.mohwwas2_servlet_engine40">
+<link rel="stylesheet" href="/static/css/lightslider.min.css;jsessionid=3oYa9RojaRdqJebgu1EtQkIafR7jOubsJekxcBOISdaQUNnY4bbzkTB1v6xYyatW.mohwwas2_servlet_engine40">
 <!--[if lt IE 10]>
-<link rel="stylesheet" href="/static/css/nh_common_ie9.css;jsessionid=1rb8Xf6QV1c0MVszcOIpD9g1EOw2vzGXUfJ1J1egzGM95ZfY4vm5PRtJ4K9kVZxx.mohwwas1_servlet_engine40">
+<link rel="stylesheet" href="/static/css/nh_common_ie9.css;jsessionid=3oYa9RojaRdqJebgu1EtQkIafR7jOubsJekxcBOISdaQUNnY4bbzkTB1v6xYyatW.mohwwas2_servlet_engine40">
 <![endif]-->
 
-<script src="/static/js/jquery-1.11.2.min.js;jsessionid=1rb8Xf6QV1c0MVszcOIpD9g1EOw2vzGXUfJ1J1egzGM95ZfY4vm5PRtJ4K9kVZxx.mohwwas1_servlet_engine40"></script>
-<script src="/static/js/lightslider.min.js;jsessionid=1rb8Xf6QV1c0MVszcOIpD9g1EOw2vzGXUfJ1J1egzGM95ZfY4vm5PRtJ4K9kVZxx.mohwwas1_servlet_engine40"></script>
-<script src="/static/js/co_common.js;jsessionid=1rb8Xf6QV1c0MVszcOIpD9g1EOw2vzGXUfJ1J1egzGM95ZfY4vm5PRtJ4K9kVZxx.mohwwas1_servlet_engine40"></script>
-<script src="/static/js/co_gallery.js;jsessionid=1rb8Xf6QV1c0MVszcOIpD9g1EOw2vzGXUfJ1J1egzGM95ZfY4vm5PRtJ4K9kVZxx.mohwwas1_servlet_engine40"></script>
+<script src="/static/js/jquery-1.11.2.min.js;jsessionid=3oYa9RojaRdqJebgu1EtQkIafR7jOubsJekxcBOISdaQUNnY4bbzkTB1v6xYyatW.mohwwas2_servlet_engine40"></script>
+<script src="/static/js/lightslider.min.js;jsessionid=3oYa9RojaRdqJebgu1EtQkIafR7jOubsJekxcBOISdaQUNnY4bbzkTB1v6xYyatW.mohwwas2_servlet_engine40"></script>
+<script src="/static/js/co_common.js;jsessionid=3oYa9RojaRdqJebgu1EtQkIafR7jOubsJekxcBOISdaQUNnY4bbzkTB1v6xYyatW.mohwwas2_servlet_engine40"></script>
+<script src="/static/js/co_gallery.js;jsessionid=3oYa9RojaRdqJebgu1EtQkIafR7jOubsJekxcBOISdaQUNnY4bbzkTB1v6xYyatW.mohwwas2_servlet_engine40"></script>
 
 <script type="text/javaScript" language="javascript">
 
@@ -300,7 +300,7 @@ function search( where ){
 			</div>
 		</div>
 
-<script src="/static/js/netfunnel.js"></script>
+
 <script type="text/javaScript" language="javascript">
 
 function fn_search(pageNo){
@@ -309,10 +309,7 @@ function fn_search(pageNo){
 }
 
 
-// 넷퍼넬  code
-$(document).ready(function() {
-	NetFunnel_Complete();
-});
+
 </script>
 
 <form name="form1" id="form1" method="post">
@@ -359,70 +356,406 @@ $(document).ready(function() {
 									num_comma( $(".number") ); // 숫자 3자리 콤마
 								});
 							</script>
-
+							
 							<div class="timetable">
-								<p class="info"><span>2020년 3월 1일(일) 16시</span>기준</p>
+								<p class="info"><span>2020년 3월 4일(수) 0시</span>기준</p>
 							</div>
+							
+							<!--20200302 지도 시작-->
+							
+    <script src="/static/js/jquery.svg.min.js"></script>
+    <script src="/static/js/co_map.js"></script>	
 
-							<div class="data_table tbl_scrl_mini2 mgt24">
+							<div class="maparea">
+								<p class="mapnotice">지역을 클릭하시면 상세 현황을 확인할 수 있습니다.</p>
+								<div id="maplayout">
+									<button type="button" data-city="map_city1">
+										<span class="name">서울</span><span class="num">99명</span>
+									</button>
+									<button type="button" data-city="map_city2">
+										<span class="name">부산</span><span class="num">93명</span>
+									</button>
+									<button type="button" data-city="map_city3">
+										<span class="name">대구</span><span class="num">4,006명</span>
+									</button>
+									<button type="button" data-city="map_city4">
+										<span class="name">인천</span><span class="num">9명</span>
+									</button>
+									<button type="button" data-city="map_city5">
+										<span class="name">광주</span><span class="num">13명</span>
+									</button>
+									<button type="button" data-city="map_city6">
+										<span class="name">대전</span><span class="num">15명</span>
+									</button>
+									<button type="button" data-city="map_city7">
+										<span class="name">울산</span><span class="num">23명</span>
+									</button>
+									<button type="button" data-city="map_city8">
+										<span class="name">세종</span><span class="num">1명</span>
+									</button>
+									<button type="button" data-city="map_city9">
+										<span class="name">경기</span><span class="num">101명</span>
+									</button>
+									<button type="button" data-city="map_city10">
+										<span class="name">강원</span><span class="num">21명</span>
+									</button>
+									<button type="button" data-city="map_city11">
+										<span class="name">충북</span><span class="num">11명</span>
+									</button>
+									<button type="button" data-city="map_city12">
+										<span class="name">충남</span><span class="num">82명</span>
+									</button>
+									<button type="button" data-city="map_city13">
+										<span class="name">전북</span><span class="num">7명</span>
+									</button>
+									<button type="button" data-city="map_city14">
+										<span class="name">전남</span><span class="num">5명</span>
+									</button>
+									<button type="button" data-city="map_city15">
+										<span class="name">경북</span><span class="num">774명</span>
+									</button>
+									<button type="button" data-city="map_city16">
+										<span class="name">경남</span><span class="num">65명</span>
+									</button>
+									<button type="button" data-city="map_city17">
+										<span class="name">제주</span><span class="num">3명</span>
+									</button>								
+									<!-- 지도 영역-->									
+								</div>
+								<div class="maplist">
+									<ul>
+									
+										<li class="open" id="map_city_all">
+											<div class="mapview">
+												<strong class="title">전체</strong>
+												<ul class="list">
+													<li>
+														<span class="sub_tit">확진환자수</span>
+														<span class="sub_num">5,328<em class="type">명</em></span>
+													</li>
+													<li>
+														<span class="sub_tit">사망자수</span>
+														<span class="sub_num">32<em class="type">명</em></span>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li id="map_city1">
+											<div class="mapview">
+												<strong class="title">서울</strong>
+												<ul class="list">
+													<li>
+														<span class="sub_tit">확진환자수</span>
+														<span class="sub_num">99<em class="type">명</em></span>
+													</li>
+													<li>
+														<span class="sub_tit">사망자수</span>
+														<span class="sub_num">0<em class="type">명</em></span>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li id="map_city2">
+											<div class="mapview">
+												<strong class="title">부산</strong>
+												<ul class="list">
+													<li>
+														<span class="sub_tit">확진환자수</span>
+														<span class="sub_num">93<em class="type">명</em></span>
+													</li>
+													<li>
+														<span class="sub_tit">사망자수</span>
+														<span class="sub_num">1<em class="type">명</em></span>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li id="map_city3">
+											<div class="mapview">
+												<strong class="title">대구</strong>
+												<ul class="list">
+													<li>
+														<span class="sub_tit">확진환자수</span>
+														<span class="sub_num">4,006<em class="type">명</em></span>
+													</li>
+													<li>
+														<span class="sub_tit">사망자수</span>
+														<span class="sub_num">24<em class="type">명</em></span>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li id="map_city4">
+											<div class="mapview">
+												<strong class="title">인천</strong>
+												<ul class="list">
+													<li>
+														<span class="sub_tit">확진환자수</span>
+														<span class="sub_num">9<em class="type">명</em></span>
+													</li>
+													<li>
+														<span class="sub_tit">사망자수</span>
+														<span class="sub_num">0<em class="type">명</em></span>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li id="map_city5">
+											<div class="mapview">
+												<strong class="title">광주</strong>
+												<ul class="list">
+													<li>
+														<span class="sub_tit">확진환자수</span>
+														<span class="sub_num">13<em class="type">명</em></span>
+													</li>
+													<li>
+														<span class="sub_tit">사망자수</span>
+														<span class="sub_num">0<em class="type">명</em></span>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li id="map_city6">
+											<div class="mapview">
+												<strong class="title">대전</strong>
+												<ul class="list">
+													<li>
+														<span class="sub_tit">확진환자수</span>
+														<span class="sub_num">15<em class="type">명</em></span>
+													</li>
+													<li>
+														<span class="sub_tit">사망자수</span>
+														<span class="sub_num">0<em class="type">명</em></span>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li id="map_city7">
+											<div class="mapview">
+												<strong class="title">울산</strong>
+												<ul class="list">
+													<li>
+														<span class="sub_tit">확진환자수</span>
+														<span class="sub_num">23<em class="type">명</em></span>
+													</li>
+													<li>
+														<span class="sub_tit">사망자수</span>
+														<span class="sub_num">0<em class="type">명</em></span>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li id="map_city8">
+											<div class="mapview">
+												<strong class="title">세종</strong>
+												<ul class="list">
+													<li>
+														<span class="sub_tit">확진환자수</span>
+														<span class="sub_num">1<em class="type">명</em></span>
+													</li>
+													<li>
+														<span class="sub_tit">사망자수</span>
+														<span class="sub_num">0<em class="type">명</em></span>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li id="map_city9">
+											<div class="mapview">
+												<strong class="title">경기</strong>
+												<ul class="list">
+													<li>
+														<span class="sub_tit">확진환자수</span>
+														<span class="sub_num">101<em class="type">명</em></span>
+													</li>
+													<li>
+														<span class="sub_tit">사망자수</span>
+														<span class="sub_num">1<em class="type">명</em></span>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li id="map_city10">
+											<div class="mapview">
+												<strong class="title">강원</strong>
+												<ul class="list">
+													<li>
+														<span class="sub_tit">확진환자수</span>
+														<span class="sub_num">20<em class="type">명</em></span>
+													</li>
+													<li>
+														<span class="sub_tit">사망자수</span>
+														<span class="sub_num">0<em class="type">명</em></span>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li id="map_city11">
+											<div class="mapview">
+												<strong class="title">충북</strong>
+												<ul class="list">
+													<li>
+														<span class="sub_tit">확진환자수</span>
+														<span class="sub_num">11<em class="type">명</em></span>
+													</li>
+													<li>
+														<span class="sub_tit">사망자수</span>
+														<span class="sub_num">0<em class="type">명</em></span>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li id="map_city12">
+											<div class="mapview">
+												<strong class="title">충남</strong>
+												<ul class="list">
+													<li>
+														<span class="sub_tit">확진환자수</span>
+														<span class="sub_num">82<em class="type">명</em></span>
+													</li>
+													<li>
+														<span class="sub_tit">사망자수</span>
+														<span class="sub_num">0<em class="type">명</em></span>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li id="map_city13">
+											<div class="mapview">
+												<strong class="title">전북</strong>
+												<ul class="list">
+													<li>
+														<span class="sub_tit">확진환자수</span>
+														<span class="sub_num">7<em class="type">명</em></span>
+													</li>
+													<li>
+														<span class="sub_tit">사망자수</span>
+														<span class="sub_num">0<em class="type">명</em></span>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li id="map_city14">
+											<div class="mapview">
+												<strong class="title">전남</strong>
+												<ul class="list">
+													<li>
+														<span class="sub_tit">확진환자수</span>
+														<span class="sub_num">5<em class="type">명</em></span>
+													</li>
+													<li>
+														<span class="sub_tit">사망자수</span>
+														<span class="sub_num">0<em class="type">명</em></span>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li id="map_city15">
+											<div class="mapview">
+												<strong class="title">경북</strong>
+												<ul class="list">
+													<li>
+														<span class="sub_tit">확진환자수</span>
+														<span class="sub_num">774<em class="type">명</em></span>
+													</li>
+													<li>
+														<span class="sub_tit">사망자수</span>
+														<span class="sub_num">6<em class="type">명</em></span>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li id="map_city16">
+											<div class="mapview">
+												<strong class="title">경남</strong>
+												<ul class="list">
+													<li>
+														<span class="sub_tit">확진환자수</span>
+														<span class="sub_num">65<em class="type">명</em></span>
+													</li>
+													<li>
+														<span class="sub_tit">사망자수</span>
+														<span class="sub_num">0<em class="type">명</em></span>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li id="map_city17">
+											<div class="mapview">
+												<strong class="title">제주</strong>
+												<ul class="list">
+													<li>
+														<span class="sub_tit">확진환자수</span>
+														<span class="sub_num">3<em class="type">명</em></span>
+													</li>
+													<li>
+														<span class="sub_tit">사망자수</span>
+														<span class="sub_num">0<em class="type">명</em></span>
+													</li>
+												</ul>
+											</div>
+										</li>
+										
+									</ul>
+								</div>
+							</div>
+							<!--20200302 지도 끝//-->							
+							
+							<div class="data_table mgt24">
 								<table class="num">
-									<caption><span class="hdn">코로나-19 시도별 발생 현황표 - 구분, 증감, 확진환자 계, 확진환자 중 격리 중, 격리해제, 사망 환자정보, 의사환자 계, 의사환자 검사현황 중 검사중, 결과음성 정보, 합계로 구성</span></caption>
+									<caption><span class="hdn">코로나-19 시도별 발생 현황표 - 시도명, 전일대비 확진환자 증감, 확진환자수(명), 사망자수(명), 발생률, 일일 검사건수(명)로 구성</span></caption>
 									<colgroup>
-										<col style="width:8%;">
-										<col style="width:8%;">
-										<col style="width:11%;">
-										<col style="width:10%;">
-										<col style="width:10%;">
-										<col style="width:8%;">
-										<col style="width:11%;">
-										<col style="width:10%;">
-										<col style="width:10%;">
 										<col style="width:14%;">
+										<col style="width:14%;">
+										<col style="width:20%;">
+										<col style="width:20%;">
+										<col style="width:16%;">
+										<col style="width:16%;">
 									</colgroup>
 									<thead>
 										<tr>
-											<th scope="col" rowspan="2">구분</th>
-											<th scope="col" rowspan="2">확진환자 증감 <!--<p class="txt_clr_red">* 새롭게 확진된 환자</p>//--></th>
-											<th id="status_con" colspan="4">확진환자 <span class="numtype">(명)</span></th>
-											<th id="status_test" colspan="3">검사현황 <span class="numtype">(명)</span></th>
-											<th scope="col" rowspan="2">총계</th>
+											<th scope="col" rowspan="2">시도명</th>
+											<th scope="col" rowspan="2">전일대비<br />확진환자<br />증감</th>
+											<th id="status_con" colspan="3">확진환자 (명)</th>
+											<th scope="col" rowspan="2">일일<br />검사건수 (명)<span class="txt_ntc_bold"> (**)</span></th>
 										</tr>
 										<tr>
-											<th scope="col" id="s_type1">계</th>
-											<th scope="col" id="s_type2">격리<br /> 중</th>
-											<th scope="col" id="s_type3">격리<br />해제</th>
-											<th scope="col" id="s_type4">사망</th>
-											<th scope="col" id="s_type5">계</th>
-											<th scope="col" id="s_type6">검사<br /> 중</th>
-											<th scope="col" id="s_type7">결과<br />음성</th>
+											<th scope="col" id="s_type1">확진<br />환자수</th>
+											<th scope="col" id="s_type2">사망자<br />수</th>
+											<th scope="col" id="s_type3">발생률<span class="txt_ntc_bold"> (*)</span></th>
 										</tr>
 									</thead>
 									<tbody>
 
-<tr class="sumline"><th scope="row">합계</th><td class="number">586</td><td headers="status_con s_type1" class="number">3,736</td><td headers="status_con s_type2" class="number">3688</td><td headers="status_con s_type3" class="number">30</td><td headers="status_con s_type4" class="number">18</td><td headers="status_test s_type5" class="number">95,185</td><td headers="status_test s_type6" class="number">33,360</td><td headers="status_test s_type7" class="number">61,825</td><td class="number">98,921</td></tr>
-<tr><th scope="row">서울</th><td class="number">10</td><td headers="status_con s_type1" class="number">87</td><td headers="status_con s_type2" class="number">74</td><td headers="status_con s_type3" class="number">13</td><td headers="status_con s_type4" class="number">0</td><td headers="status_test s_type5" class="number">16,382</td><td headers="status_test s_type6" class="number">4,739</td><td headers="status_test s_type7" class="number">11,643</td><td class="number">16,469</td></tr>
-<tr><th scope="row">부산</th><td class="number">3</td><td headers="status_con s_type1" class="number">83</td><td headers="status_con s_type2" class="number">83</td><td headers="status_con s_type3" class="number">0</td><td headers="status_con s_type4" class="number">0</td><td headers="status_test s_type5" class="number">7,049</td><td headers="status_test s_type6" class="number">2,587</td><td headers="status_test s_type7" class="number">4,462</td><td class="number">7,132</td></tr>
-<tr><th scope="row">대구</th><td class="number">469</td><td headers="status_con s_type1" class="number">2,705</td><td headers="status_con s_type2" class="number">2,692</td><td headers="status_con s_type3" class="number">4</td><td headers="status_con s_type4" class="number">9</td><td headers="status_test s_type5" class="number">10,958</td><td headers="status_test s_type6" class="number">5,486</td><td headers="status_test s_type7" class="number">5,472</td><td class="number">13,663</td></tr>
-<tr><th scope="row">인천</th><td class="number">0</td><td headers="status_con s_type1" class="number">6</td><td headers="status_con s_type2" class="number">5</td><td headers="status_con s_type3" class="number">1</td><td headers="status_con s_type4" class="number">0</td><td headers="status_test s_type5" class="number">5,346</td><td headers="status_test s_type6" class="number">1,323</td><td headers="status_test s_type7" class="number">4,023</td><td class="number">5,352</td></tr>
-<tr><th scope="row">광주</th><td class="number">0</td><td headers="status_con s_type1" class="number">9</td><td headers="status_con s_type2" class="number">7</td><td headers="status_con s_type3" class="number">2</td><td headers="status_con s_type4" class="number">0</td><td headers="status_test s_type5" class="number">1,429</td><td headers="status_test s_type6" class="number">718</td><td headers="status_test s_type7" class="number">711</td><td class="number">1,438</td></tr>
-<tr><th scope="row">대전</th><td class="number">0</td><td headers="status_con s_type1" class="number">13</td><td headers="status_con s_type2" class="number">13</td><td headers="status_con s_type3" class="number">0</td><td headers="status_con s_type4" class="number">0</td><td headers="status_test s_type5" class="number">2,685</td><td headers="status_test s_type6" class="number">1,161</td><td headers="status_test s_type7" class="number">1,524</td><td class="number">2,698</td></tr>
-<tr><th scope="row">울산</th><td class="number">3</td><td headers="status_con s_type1" class="number">20</td><td headers="status_con s_type2" class="number">20</td><td headers="status_con s_type3" class="number">0</td><td headers="status_con s_type4" class="number">0</td><td headers="status_test s_type5" class="number">2,227</td><td headers="status_test s_type6" class="number">505</td><td headers="status_test s_type7" class="number">1,722</td><td class="number">2,247</td></tr>
-<tr><th scope="row">세종</th><td class="number">0	</td><td headers="status_con s_type1" class="number">	1	</td><td headers="status_con s_type2" class="number">	1</td><td headers="status_con s_type3" class="number">0</td><td headers="status_con s_type4" class="number">0</td><td headers="status_test s_type5" class="number">328</td><td headers="status_test s_type6" class="number">267</td><td headers="status_test s_type7" class="number">61</td><td class="number">329</td></tr>
-<tr><th scope="row">경기</th><td class="number">7</td><td headers="status_con s_type1" class="number">89</td><td headers="status_con s_type2" class="number">80</td><td headers="status_con s_type3" class="number">8</td><td headers="status_con s_type4" class="number">1</td><td headers="status_test s_type5" class="number">18,614</td><td headers="status_test s_type6" class="number">5392</td><td headers="status_test s_type7" class="number">13,222</td><td class="number">18,703</td></tr>
-<tr><th scope="row">강원</th><td class="number">8</td><td headers="status_con s_type1" class="number">15</td><td headers="status_con s_type2" class="number">15</td><td headers="status_con s_type3" class="number">0</td><td headers="status_con s_type4" class="number">0</td><td headers="status_test s_type5" class="number">3,252</td><td headers="status_test s_type6" class="number">836</td><td headers="status_test s_type7" class="number">2,416</td><td class="number">3,267</td></tr>
-<tr><th scope="row">충북</th><td class="number">1</td><td headers="status_con s_type1" class="number">11</td><td headers="status_con s_type2" class="number">11</td><td headers="status_con s_type3" class="number">0</td><td headers="status_con s_type4" class="number">0</td><td headers="status_test s_type5" class="number">3,117</td><td headers="status_test s_type6" class="number">644</td><td headers="status_test s_type7" class="number">2,473</td><td class="number">3,128</td></tr>
-<tr><th scope="row">충남</th><td class="number">13</td><td headers="status_con s_type1" class="number">68</td><td headers="status_con s_type2" class="number">68</td><td headers="status_con s_type3" class="number">0</td><td headers="status_con s_type4" class="number">0</td><td headers="status_test s_type5" class="number">4,201</td><td headers="status_test s_type6" class="number">2,154</td><td headers="status_test s_type7" class="number">2,047</td><td class="number">4,269</td></tr>
-<tr><th scope="row">전북</th><td class="number">1</td><td headers="status_con s_type1" class="number">6</td><td headers="status_con s_type2" class="number">5</td><td headers="status_con s_type3" class="number">1</td><td headers="status_con s_type4" class="number">0</td><td headers="status_test s_type5" class="number">1,546</td><td headers="status_test s_type6" class="number">356</td><td headers="status_test s_type7" class="number">1,190</td><td class="number">1,552</td></tr>
-<tr><th scope="row">전남</th><td class="number">0</td><td headers="status_con s_type1" class="number">3</td><td headers="status_con s_type2" class="number">2</td><td headers="status_con s_type3" class="number">1</td><td headers="status_con s_type4" class="number">0</td><td headers="status_test s_type5" class="number">2,679</td><td headers="status_test s_type6" class="number">984</td><td headers="status_test s_type7" class="number">1,695</td><td class="number">2,682</td></tr>
-<tr><th scope="row">경북</th><td class="number">67</td><td headers="status_con s_type1" class="number">555</td><td headers="status_con s_type2" class="number">547</td><td headers="status_con s_type3" class="number">0</td><td headers="status_con s_type4" class="number">8</td><td headers="status_test s_type5" class="number">10,062</td><td headers="status_test s_type6" class="number">5,087</td><td headers="status_test s_type7" class="number">4,975</td><td class="number">10,617</td></tr>
-<tr><th scope="row">경남</th><td class="number">4</td><td headers="status_con s_type1" class="number">63</td><td headers="status_con s_type2" class="number">63</td><td headers="status_con s_type3" class="number">0</td><td headers="status_con s_type4" class="number">0</td><td headers="status_test s_type5" class="number">3,973</td><td headers="status_test s_type6" class="number">1,074</td><td headers="status_test s_type7" class="number">2,899</td><td class="number">4,036</td></tr>
-<tr><th scope="row">제주</th><td class="number">0</td><td headers="status_con s_type1" class="number">2</td><td headers="status_con s_type2" class="number">2</td><td headers="status_con s_type3" class="number">0</td><td headers="status_con s_type4" class="number">0</td><td headers="status_test s_type5" class="number">787</td><td headers="status_test s_type6" class="number">47</td><td headers="status_test s_type7" class="number">740</td><td class="number">789</td></tr>
-<tr><th scope="row">검역</th><td class="number">0	</td><td headers="status_con s_type1" class="number">	0	</td><td headers="status_con s_type2" class="number">	0</td><td headers="status_con s_type3" class="number">0</td><td headers="status_con s_type4" class="number">0</td><td headers="status_test s_type5" class="number">550</td><td headers="status_test s_type6" class="number">0</td><td headers="status_test s_type7" class="number">550</td><td class="number">550</td></tr>
+<tr class="sumline"><th scope="row">합계</th><td class="number"> 516 </td><td header="status_con s_type1" class="number"> 5,328 </td><td header="status_con s_type2" class="number"> 32 </td><td header="status_con s_type3" class="number">10.3 </td><td class="number"> 9,818 </td></tr>
+<tr><th scope="row">서울</th><td class="number"> 1 </td><td header="status_con s_type1" class="number"> 99 </td><td header="status_con s_type2" class="number">0</td><td header="status_con s_type3" class="number"> 1.0 </td><td class="number"> 834 </td></tr>
+<tr><th scope="row">부산</th><td class="number"> 3 </td><td header="status_con s_type1" class="number"> 93 </td><td header="status_con s_type2" class="number"> 1 </td><td header="status_con s_type3" class="number"> 2.7 </td><td class="number"> 513 </td></tr>
+<tr><th scope="row">대구</th><td class="number"> 405 </td><td header="status_con s_type1" class="number"> 4,006 </td><td header="status_con s_type2" class="number"> 24 </td><td header="status_con s_type3" class="number"> 164.4 </td><td class="number"> 1,829 </td></tr>
+<tr><th scope="row">인천</th><td class="number"> 2 </td><td header="status_con s_type1" class="number"> 9 </td><td header="status_con s_type2" class="number">0</td><td header="status_con s_type3" class="number"> 0.3 </td><td class="number"> 616 </td></tr>
+<tr><th scope="row">광주</th><td class="number"> 2 </td><td header="status_con s_type1" class="number"> 13 </td><td header="status_con s_type2" class="number">0</td><td header="status_con s_type3" class="number"> 0.9 </td><td class="number"> 109 </td></tr>
+<tr><th scope="row">대전</th><td class="number"> 1 </td><td header="status_con s_type1" class="number"> 15 </td><td header="status_con s_type2" class="number">0</td><td header="status_con s_type3" class="number"> 1.0 </td><td class="number"> 171 </td></tr>
+<tr><th scope="row">울산</th><td class="number"> 3 </td><td header="status_con s_type1" class="number"> 23 </td><td header="status_con s_type2" class="number">0</td><td header="status_con s_type3" class="number"> 2.0 </td><td class="number"> 161 </td></tr>
+<tr><th scope="row">세종</th><td class="number">0</td><td header="status_con s_type1" class="number"> 1 </td><td header="status_con s_type2" class="number">0</td><td header="status_con s_type3" class="number"> 0.3 </td><td class="number"> 78 </td></tr>
+<tr><th scope="row">경기</th><td class="number"> 7 </td><td header="status_con s_type1" class="number"> 101 </td><td header="status_con s_type2" class="number"> 1 </td><td header="status_con s_type3" class="number"> 0.8 </td><td class="number"> 1,670 </td></tr>
+<tr><th scope="row">강원</th><td class="number"> 1 </td><td header="status_con s_type1" class="number"> 21 </td><td header="status_con s_type2" class="number">0</td><td header="status_con s_type3" class="number"> 1.4 </td><td class="number"> 452 </td></tr>
+<tr><th scope="row">충북</th><td class="number">0</td><td header="status_con s_type1" class="number"> 11 </td><td header="status_con s_type2" class="number">0</td><td header="status_con s_type3" class="number"> 0.7 </td><td class="number"> 240 </td></tr>
+<tr><th scope="row">충남</th><td class="number"> 1 </td><td header="status_con s_type1" class="number"> 82 </td><td header="status_con s_type2" class="number">0</td><td header="status_con s_type3" class="number"> 3.9 </td><td class="number"> 626 </td></tr>
+<tr><th scope="row">전북</th><td class="number">0</td><td header="status_con s_type1" class="number"> 7 </td><td header="status_con s_type2" class="number">0</td><td header="status_con s_type3" class="number"> 0.4 </td><td class="number"> 250 </td></tr>
+<tr><th scope="row">전남</th><td class="number">0</td><td header="status_con s_type1" class="number"> 5 </td><td header="status_con s_type2" class="number">0</td><td header="status_con s_type3" class="number"> 0.3 </td><td class="number"> 214 </td></tr>
+<tr><th scope="row">경북</th><td class="number"> 89 </td><td header="status_con s_type1" class="number"> 774 </td><td header="status_con s_type2" class="number"> 6 </td><td header="status_con s_type3" class="number"> 29.1 </td><td class="number"> 1,583 </td></tr>
+<tr><th scope="row">경남</th><td class="number"> 1 </td><td header="status_con s_type1" class="number"> 65 </td><td header="status_con s_type2" class="number">0</td><td header="status_con s_type3" class="number"> 1.9 </td><td class="number"> 413 </td></tr>
+<tr><th scope="row">제주</th><td class="number">0</td><td header="status_con s_type1" class="number"> 3 </td><td header="status_con s_type2" class="number">0</td><td header="status_con s_type3" class="number"> 0.4 </td><td class="number"> 59 </td></tr>
+
 
 									</tbody>
 								</table>
 							</div>
-							
+							<p class="s_descript mgt16">
+								<span class="txt_ntc_bold">(*)</span> 인구 10만 명당 (지역별 인구 출처 : 행정안전부, 주민등록인구현황 (’20.1월 기준))<br />
+								<span class="txt_ntc_bold">(**)</span> 일일 검사건수는 당일 보고건을 09시에 집계한 것이며 00시 기준으로 제공되는 보도자료와는 차이가 있을 수 있음<br />
+								<span class="txt_ntc">※</span> 지역구분은 신고지를 기준으로 하며, 초기 신고 이후 소관지역이 변경된 경우 변동 가능
+							</p>	
+
 							<div class="citylist">
 								<p class="ta_c mgt16"><strong class="w_bold">시도별 코로나19 관련 정보</strong></p>
 								<ul class="mgt16 cnt4">
